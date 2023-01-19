@@ -1,0 +1,22 @@
+1. class Base {
+    public void show() {
+       System.out.println("Base::show() called");
+    }
+}
+   
+class Derived extends Base {
+    public void show() {
+       System.out.println("Derived::show() called");
+    }
+}
+   
+public class Main {
+    public static void main(String[] args) {
+        Base b = new Derived();;
+        b.show();
+    }
+}
+
+
+O/P:  Derived::show() called
+In the above Program, b is the reference of base type and object of derived class. In java, functions are virtual by default. So, the run time polymorphism happens and derived fun() is called
