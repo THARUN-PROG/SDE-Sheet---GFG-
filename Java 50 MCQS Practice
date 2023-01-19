@@ -205,6 +205,33 @@ class Main {
 
 
 O/P: Complex number is (10.0 + 15.0i)
+Exp: All classes in Java inherit from the Object class, directly or indirectly (See point 1 of this). 
+The Object class has some basic methods like clone(), toString(), equals(),.. etc. 
+The default toString() method in Object prints “class name @ hash code”. 
+We can override the toString() method in our class to print proper output. 
+For example, in the following code toString() is overridden to print the “Real + i Imag” form.
+
+
+
+
+13. class Test {
+  int i;
+} 
+class Main {
+  public static void main(String args[]) { 
+      Test t = new Test(); 
+      System.out.println(t.i);
+   } 
+}
+
+
+O/P: 0
+Exp: In Java, fields of classes and objects that do not have an explicit initializer and elements of arrays are automatically initialized with the default value for their type (false for boolean, 0 for all numerical types, null for all reference types). 
+Local variables in Java must be definitely assigned to before they are accessed, or it is a compile error.
+
+
+14. 
+
 
 
 
